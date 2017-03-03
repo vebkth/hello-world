@@ -16,7 +16,7 @@ class Portfolio(models.Model):
 	name_of_user=models.CharField(max_length=100)
 	work_ex=models.IntegerField()	
 	content=model.TextField()
-	
+	area_of_spl=model.CharField(max_length=250)
 
 
 
