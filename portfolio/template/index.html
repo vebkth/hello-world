@@ -1,0 +1,16 @@
+{% if portfolio_list %}
+<ul>
+{% for pfolio in portfolio_list %}
+<li><a href="/portfolio/{{pfolio.id}}/">  
+<ul>
+<li>Name = {{pfolio.name_of_user}} </li>
+<li>Work Experience {{pfolio.work_ex}}</li>
+<li> Area of Specialization {{pfolio.area_of_spl}}</li>
+</ul>
+</a>
+</li>
+{% endfor %}
+</ul>
+{% else %}
+<p> no portfolio uploaded by admin </p>
+{% endif %}
