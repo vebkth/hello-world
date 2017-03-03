@@ -4,7 +4,7 @@ from .models import Portfolio
 
 def index(request):
 	portfolio_list=Portfolio.objects.all()
-	return httpResponse('')
+	return render(request,'index.html',{'portfolio_list':portfolio_list})
 
 def detail(request):
 	return HttpResponse('this is not what youre looking for')
