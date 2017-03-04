@@ -8,7 +8,8 @@ class Contact(models.Model):
 	contact_number=models.CharField(max_length=10)
 	address=models.TextField()
 	issue_date=models.DateTimeField('date request sent')
-
+	def _str_(self):
+		return self.name
 
 
 
@@ -17,6 +18,8 @@ class Portfolio(models.Model):
 	work_ex=models.IntegerField()	
 	content=model.TextField()
 	area_of_spl=model.CharField(max_length=250)
+	def _str_(self):
+		return self.name_of_user
 
 
 
