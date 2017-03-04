@@ -1,0 +1,8 @@
+<h1> Contact {{pfolio.name_of_user}} for interview </h1>
+<h2> please enter your details </h2>
+<form action= "{% url 'portfolio:contact' pfolio.id}" method='post'>
+{% csrf_token %}
+<input type='text' name='name' value={{contact.name}}>
+<input type='text' name='contact_number' value={{contact.contact_number}}
+<input type='text' name='address' value={{contact.address}}
+<input type
